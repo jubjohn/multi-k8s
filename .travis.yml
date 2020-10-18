@@ -11,7 +11,7 @@ script:
 
 after_success:
     - docker build -t jubinjohn/multi-client ./client
-    - docker build -t jubinjohn/multi-ngnix ./nginx
+    - docker build -t jubinjohn/multi-nginx ./nginx
     - docker build -t jubinjohn/multi-server ./server
     - docker build -t jubinjohn/multi-worker ./worker
     # Log in to the docker CLI
