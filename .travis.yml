@@ -6,6 +6,9 @@ env:
     global:
         - SHA=$(git rev-parse HEAD)
         - CLOUDSDK_CORE_DISABLE_PROMPTS=1
+        - secure: "n/GrCenUkHd1Yj8oI6HGs5Q5jKZuiQOro8cWO5iiXhhcQlk+YfcKTXUmNN//sHG5ZDLbLD2pGHjm2jRZnXsFSQcd3bgUw25aPN2zrE+EtsA+VzfA9irOcckSp1y2T6GBi7KErwF9L69ednuqB4gY1orqfP6o0HdeuVoeL5+YuMFlUfwiuCr4lyDEiG0f2fkCQiTZpxz6YoE1GnBGVeJYA+zlIwN1TSx3aaQSD1S7x9+P0bGFRkXnl26uun68g4CStceVUUMrfcKhs+DeNd75H8FRsY8Z9uEbto+W92DuoqljdhHs7M81PJaHPXhjLKjsWb2qZKY7Vkvmx8JRb2B7Imyh6ZpRHILjUZWqz1X4b8r60ls4/UynheYV5Qi/NqcJI/a5hTuMJHwdlXZt1EHRxBwpyFNkG+lggbf/vyxId0XxyCr68Dmu/1IQmPIOryc1KS2/IlwihWuxM59a/49jU8iinmCWbuh1cd5ikmyjhAA765vq1YUJf7RMYekJ15CebFsPmV/5ejcg2iABSseLsP46xuMJObflEm4AK2leFjS2N50P54zm88bq+1vK4PCh/Hk6slMdZQul+q3AgkmxHH8xeKTwO7BQnXLX06s3MPXV6cWf8W0H/EFzsY0O//jZFJgM/UgV67eBmipbXCEHQso46ssB2UmYlNJiAbVQaX8="
+        - secure: "HSC8Msz8QZLJLY/PayBjiO2L1tdtcADRDUFO1b6w/IsPwPl1Ig3moMSEe8fiA6XJ3oKurL1xcnPB23UArJzomEITsRJBWFB1Ib4fPOLt0JAINxaDC1VfMuC8Gi7VCNCW9TW4mjJEZMtGmAGK70uiUUWot//Kp+WljHBBxtXNEyp1riyoMsJ+DjgfYNNFmKrG+OvigON3XiJQ9DKe43zQN9QZ2AX3HDD9xGrdWVPXl2DCzh5m3h4og/JyN7dyHkYycPGvsEhCj5VVWN/ufZbA/cF0uoOL1zlTzibtbYW7oD7vfW9xAT+1Pm1sR3AXgDJkxtc4UVtNeDZ5mtAOprWJ4sRIOoCi7mkMSJ1Hb7EoEw2IdY1HAIVF3Up9E03mfJd6a25LtGtWvyO0lWZ5cH9LJskoXgOTtH1eSND/NB5+fuf6zdk3MoGIgTIni56VKuWIa0ndzZS8Q7GpHL6nP4D+5nNTtI1CTQP7bBKfGet+QrqaDMY7BXWcGIbrSearcOQCERtLLcX/40u31b4HktCwLM+XwajcUBQK4smtSgbwIvOpenIyIqWRgs0bwSEPmAyXjh078DTFBeKVilqqN9Bt7cxD1oEU1Y2YW4BkiMH/NKahsdBmsm8D3DfVJ7nVAk/ZCU8VeZZWIlCgwWE23O4ateeYB0Fj+9LK6qXa5Zu8y1Q="
+
 before_install:
     - openssl aes-256-cbc -K $encrypted_9f3b5599b056_key -iv $encrypted_9f3b5599b056_iv -in service-account.json.enc -out service-account.json -d
     - curl https://sdk.cloud.google.com | bash > /dev/null;
