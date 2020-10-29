@@ -17,7 +17,7 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn React, straight from the horse's mouth v2
+            Learn React, straight from the horse's mouth Kubernetes!
           </a>
           <Link to="/">Home</Link>
           <Link to="/otherpage">Other Page</Link>
